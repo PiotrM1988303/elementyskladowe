@@ -1,0 +1,210 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(10deg, #2483ff 60%, #2c6afb 60%);
+}
+
+nav {
+  margin-top: 100px;
+  background-color: #292929;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  font-size: 24px;
+}
+
+.menu-item {
+  display: inline-block;
+  height: 100px;
+  width: 200px;
+  line-height: 100px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+  background-color: #363636;
+}
+
+.dropdown {
+  position: absolute;
+  width: 200px;
+}
+
+.dropdown li {
+  display: none;
+  opacity: 0;
+  background-color: #50515a;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.dropdown li:hover {
+  color: royalblue;
+}
+
+.menu-item:hover .dropdown li {
+  display: block;
+  -webkit-animation: menu .5s forwards;
+          animation: menu .5s forwards;
+}
+
+.menu-item:hover .dropdown li:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.menu-item:hover .dropdown li:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.menu-item:hover .dropdown li:nth-child(4) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.menu-item:hover .dropdown li:nth-child(5) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.menu-item:hover .dropdown li:nth-child(6) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes menu {
+  from {
+    opacity: 0;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes menu {
+  from {
+    opacity: 0;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+.two:hover .dropdown li {
+  display: block;
+  -webkit-animation: menu2 .5s forwards;
+          animation: menu2 .5s forwards;
+}
+
+@-webkit-keyframes menu2 {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes menu2 {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.three:hover .dropdown li {
+  display: block;
+  -webkit-animation: menu3 .5s forwards;
+          animation: menu3 .5s forwards;
+}
+
+@-webkit-keyframes menu3 {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(-60deg) translateX(60px);
+            transform: rotateY(-60deg) translateX(60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateY(0) translateX(0);
+            transform: rotateY(0) translateX(0);
+  }
+}
+
+@keyframes menu3 {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(-60deg) translateX(60px);
+            transform: rotateY(-60deg) translateX(60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateY(0) translateX(0);
+            transform: rotateY(0) translateX(0);
+  }
+}
+
+.four:hover .dropdown li {
+  display: block;
+  -webkit-animation: menu4 .5s forwards;
+          animation: menu4 .5s forwards;
+}
+
+@-webkit-keyframes menu4 {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.8) rotateY(-60px);
+            transform: scale(0.8) rotateY(-60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1) rotateY(0);
+            transform: scale(1) rotateY(0);
+  }
+}
+
+@keyframes menu4 {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.8) rotateY(-60px);
+            transform: scale(0.8) rotateY(-60px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1) rotateY(0);
+            transform: scale(1) rotateY(0);
+  }
+}
+/*# sourceMappingURL=transformmenu.css.map */

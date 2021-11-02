@@ -1,0 +1,134 @@
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat', sans-serif;
+https://cdn.pixabay.com/photo/2018/06/03/14/32/pistachios-3450670_960_720.jpg
+*/ 
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    // zastosowanie flexxa
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // zastosowanie flexa
+min-height: 100vh;
+// minimalnawysokość 100% view hight
+background-color: lightblue;
+}
+
+// nie musiałem ustalać wysokośći, bo ta dostosowała się do miejsca zajmowanaego przez dzieci wrappera
+.wrapper{
+    width: 440px;
+    background-color: #fff;
+    box-shadow:  0 0 10px black;
+}
+
+form{
+    padding: 40px;
+    // odsunięcie od krawędzi
+    font-size: 20px;
+}  
+
+h1{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-box{
+    margin-bottom: 15px;
+    // margines dziedziczony przez dzieci rodzica co wpływa na to, że inputy i formy odsuwwają się od siebie
+}
+
+.form-box label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-box input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+}
+
+
+// klasa, która będzie tworzona w javascript
+
+.form-box.error input{
+    border: 1px solid rgb(0, 137, 250);
+    background-color: rgba(0, 137, 250, .1);;
+}
+
+// tekst jaki wyświetli się pod inputem w razie błędu
+.form-box .text-error{
+    margin: 5px 0 0 10px;
+    font-size: 14px;
+    color: rgb(0, 137, 250);
+    visibility: hidden;
+    // chowamy napis, bo ma być wywołąny w javascript. nie stosujemy display none by nie skakał
+}
+// tworzona w javascript klasa ma wyświetlać tekst
+
+.form-box.error .text-error{
+    visibility: visible;}
+
+.control-button{
+    display: flex;
+justify-content: flex-end;
+}
+
+.clear, .send, .close{
+
+    display: block;
+    padding: 10px 0;
+    margin-left: 10px;
+    width: 100px;
+    font-size: 18px;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.clear:hover, .send:hover, .close:hover{
+    background-color: rgb(0, 107, 194);
+
+}
+
+.pop-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    // wyśrodkowanie w przypadku position absolute wymaga zastosowania:last-child
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    position: absolute;
+    top: -400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    // // koniec 
+    width: 600px;
+    height: 200px;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid black;
+    transition: top 0.5s; 
+}
+
+.close{margin-top: 20px;}
+
+// klasa w javascript
+.show-pop-up{
+    top: 200px;
+
+}

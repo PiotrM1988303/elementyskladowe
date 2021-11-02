@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trzeci projekt </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- czcionki -->
+    <link rel="stylesheet" href="css/walidatordrugi.css">
+    <script src="https://kit.fontawesome.com/7e11ade725.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+        <form>
+            <h1>Zarejestruj się</h1>
+            <div class="form-box">
+                <label for="username">Nazwa użytkownika</label>
+                <input id="username" type="text" placeholder="Podaj nazwę użytkownika"></input>
+                <p class="text-error">Error</p>
+            </div>
+
+            <div class="form-box">
+                <label for="password">Hasło</label>
+                <input id="password" type="text" placeholder="Podaj hasło"></input>
+                <p class="text-error">Error</p>
+            </div>
+
+            <div class="form-box">
+                <label for="confirme">Powtórz hasło</label>
+                <input id="confirme" type="text" placeholder="Powtórz hasło"></input>
+                <p class="text-error">Error</p>
+            </div>
+
+            <div class="form-box">
+                <label for="mail">Adres mailowy</label>
+                <input id="mail" type="email" placeholder="Podaj e-mail"></input>
+                <!-- type email podpowiada, ze będzie tu wprowadzany email -->
+                <p class="text-error">Error</p>
+            </div>
+
+
+            <div class="control-button">
+                <button class="clear">Wyczyść </button>
+                <button class="send">Wyślij</button>
+            </div>
+
+            <div class="pop-up">
+                <p>Formularz został wysłany</p>
+                <button class="close">Zamknij</button>
+            </div>
+        </form>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="js/walidatordrugi.js"> </script>
+</body>
+
+</html>

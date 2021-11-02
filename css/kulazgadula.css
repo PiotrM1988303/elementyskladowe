@@ -1,0 +1,146 @@
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat', sans-serif;
+https://cdn.pixabay.com/photo/2018/06/03/14/32/pistachios-3450670_960_720.jpg
+*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #094d73 74%);
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1000px;
+  height: 600px;
+}
+
+.info {
+  text-align: cennter;
+  font-size: 30px;
+}
+
+.info h1 {
+  margin-bottom: 10px;
+  font-size: 60px;
+}
+
+.ball-img {
+  position: relative;
+  height: 250px;
+}
+
+.ball-img img {
+  position: absolute;
+  top: 30px;
+  left: 300px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.question-arena {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 24px;
+}
+
+.question-arena input {
+  padding: 10px 20px;
+  width: 80%;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.question-arena .answer {
+  margin-top: 30px;
+}
+
+.question-arena .answer span {
+  font-weight: bolder;
+}
+
+.question-arena .answer .error {
+  font-weight: bolder;
+  color: lime;
+}
+
+.shake-animation {
+  -webkit-animation: shake 1s 1;
+          animation: shake 1s 1;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    left: 290px;
+  }
+  20% {
+    left: 340px;
+  }
+  40% {
+    left: 290px;
+  }
+  60% {
+    left: 340px;
+  }
+  80% {
+    left: 290px;
+  }
+  100% {
+    left: 300px;
+  }
+}
+
+@keyframes shake {
+  0% {
+    left: 290px;
+  }
+  20% {
+    left: 340px;
+  }
+  40% {
+    left: 290px;
+  }
+  60% {
+    left: 340px;
+  }
+  80% {
+    left: 290px;
+  }
+  100% {
+    left: 300px;
+  }
+}
+/*# sourceMappingURL=kulazgadula.css.map */

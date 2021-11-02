@@ -1,0 +1,104 @@
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat', sans-serif;
+https://cdn.pixabay.com/photo/2018/06/03/14/32/pistachios-3450670_960_720.jpg
+*/ 
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;}
+body{
+    font-family: 'Montserrat', sans-serif;
+    // zastosowanie flexxa
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // zastosowanie flexa
+min-height: 100vh;
+// minimalnawysokość 100% view hight
+background-color: rgb(233, 233, 233);
+}
+
+// nie musiałem ustalać wysokośći, bo ta dostosowała się do miejsca zajmowanaego przez dzieci wrappera
+.wrapper{
+    width: 600px;
+    background-color: #fff;
+    box-shadow:  0 0 10px black;
+}
+
+//nagłówek ze zdjęciem
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    // domyślna szerokścć równa się objętości jaką ma 
+    background-color: #00ba40;
+    color: white;
+    text-transform: uppercase;
+}
+
+.top p{
+    margin-top: 10px;
+    // odsuwamy się od nagłówka
+}
+
+.bottom{
+    padding: 40px 20px;
+    // użycie padding pozwoliło na odsunięcie od krawędzi tekstu
+}
+
+label{
+    display: block;
+    // pozwala pracować na marginesach bo przejście z obiektu liniowego  na blokowy
+    margin-bottom: 10px;
+    // odsunięcie label od input
+font-size: 22px;    
+}
+
+input, select{
+    margin-bottom: 25px;
+    padding: 8px 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid silver;
+}
+
+
+.count{
+display: block;
+// zamiana by móc pracować na marginesach  i innych wartościach
+margin: 20px auto;
+// wyśrodkowanie za pomocą ustawienia wartości auto, bo automatycznie dostosowuje 
+padding: 20px 10px;
+width: 60%;
+// czyli z zastsowwaniem wartości auto margin daje to, że marginesy będą [po 40 % 
+font-size: 24px;
+background-color: #00ba40;
+border-radius: 8px;
+color: white;
+border: none;
+cursor: pointer;
+// ponieważ zastsowano hover to równolegle stosuje transition na animowanym obiekcie gdzie podaje animowaną wartość
+transition: background-color 0.3s;
+}
+
+.count:hover{background-color: rgb(0, 168, 59);}
+
+
+
+.cost-info{
+display: none;
+// display na none bo chcemy zobazczyć napis w razie wywołania funkcji , któa obliczy wysokość napiwku
+margin-top: 30px;
+font-size: 20px;}
+
+
+.cost{font-weight: bolder;}
+
+// zawartość zostanie wyświetlona w javascript
+.error{
+font-size: 18px;
+color: red;
+text-align: center;
+}

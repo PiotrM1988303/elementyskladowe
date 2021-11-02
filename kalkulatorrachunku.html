@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drugi projekt </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- czcionki -->
+    <link rel="stylesheet" href="css/kalkulatorrachunku.css">
+    <script src="https://kit.fontawesome.com/7e11ade725.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+        <div class="top">
+            <h1>Bill spilter</h1>
+            <p>Podziel się rachunkiem ze znajomymi</p>
+        </div>
+        <div class="bottom">
+            <!-- atrybut for łączy label z inputem id for -->
+            <label for="price">Kwota to zapłąty: </label>
+            <input type="number" id="price">
+
+            <label for="people">Ilość ludzi: </label>
+            <input type="number" id="people">
+
+
+            <label for="tip">Napiwek: </label>
+            <select id="tip">
+                <!-- wybranie opcji disabled blokuje możliwość zastowania wybrania pierwszej pozycji -->
+                <option value="0" disabled selected>Wybierz napiwek</option>
+                <option value="0.05">5%</option>
+                <option value="0.1">10%</option>
+                <option value="0.15">15%</option>
+                <option value="0.20">20%</option>
+            </select>
+
+            <button class="count">Oblicz</button>
+            <p class="error"></p>
+            <p class="cost-info">Powinniści się złożyć po <span class="cost"></span></p>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="js/kalkulatorrachunku.js"> </script>
+</body>
+
+</html>

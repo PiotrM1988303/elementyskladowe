@@ -1,0 +1,101 @@
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat', sans-serif;
+https://cdn.pixabay.com/photo/2018/06/03/14/32/pistachios-3450670_960_720.jpg
+*/ 
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;}
+body{
+    font-family: 'Montserrat', sans-serif;
+    // zastosowanie flexxa
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // zastosowanie flexa
+min-height: 100vh;
+// minimalnawysokość 100% view hight
+background-color: rgb(233, 233, 233);
+}
+
+// nie musiałem ustalać wysokośći, bo ta dostosowała się do miejsca zajmowanaego przez dzieci wrappera
+.wrapper{
+    width: 800px;
+    background-color: #fff;
+    box-shadow:  0 0 10px black;
+}
+
+//nagłówek ze zdjęciem
+
+.header{
+    // nakłądamy flexa n dzieci header
+    display: flex;
+    justify-content: flex-end;
+    // by wyświetlały się ba dole dzieci to flex end i flex start
+    align-items: flex-start;
+     // nakłądamy flexa n dzieci header
+    flex-direction: column;
+    position: relative;
+    // div shadow ma być pozycjonowany wzglęem headera stąd position relative
+    height: 360px;
+    padding: 20px 40px;
+    font-family: 'Dancing Script', cursive;
+    background-image: url(https://cdn.pixabay.com/photo/2018/06/03/14/32/pistachios-3450670_960_720.jpg
+    );
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    // z index informum, że div ma być nieprzykrywany przez element, któy następuje po nim w html
+}
+// cień pod obrazkiem
+.shadow{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.35);
+z-index: -1;
+}
+
+h1{
+    padding: 10px 20px;
+    // odsuwamy od krawędzi headera
+    margin-bottom: 40px;
+    // odsuwamy od inputa
+font-size: 50px;
+color: white;
+}
+
+.search{
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    // sto procent szerokośći rodzicz
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .85);
+}
+
+
+.drink-list{
+    padding: 20px 40px;
+}
+
+h2{
+    padding: 30px;
+}
+
+ul{
+    padding-bottom: 30px;
+    font-size: 23px;
+    list-style: none;
+}
+
+li{
+    padding-bottom: 8px 30px;
+    border-bottom: 1px solid  rgb(226, 226, 226);
+}
+
+li:last-child{
+    border-bottom: 0;
+}

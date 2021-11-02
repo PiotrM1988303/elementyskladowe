@@ -1,0 +1,107 @@
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat', sans-serif;
+https://cdn.pixabay.com/photo/2018/06/03/14/32/pistachios-3450670_960_720.jpg
+*/ 
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;}
+body{
+    font-family: 'Montserrat', sans-serif;
+    // zastosowanie flexxa
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // zastosowanie flexa
+min-height: 100vh;
+// minimalnawysokość 100% view hight
+background-image:linear-gradient(315deg, #7f5a83 0%, #094d73 74%)
+}
+
+// nie musiałem ustalać wysokośći, bo ta dostosowała się do miejsca zajmowanaego przez dzieci wrappera
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 600px;
+}
+
+.info{
+    text-align: cennter;
+    // srodkujemy tekst
+    font-size: 30px;
+}
+
+.info h1{
+    margin-bottom: 10px;
+    // odsuwamy od paragrafu
+    font-size: 60px;
+}
+.ball-img{
+position: relative;
+height: 250px;
+// img będzie pozycjonowane absolutnie względem rodzica
+}
+.ball-img img{
+    position: absolute;
+    top: 30px;
+    left: 300px;
+    width: 300px;
+    cursor: pointer;
+
+}
+.question-arena{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    // by h1 było nad paragrafami
+    font-size: 24px;
+}
+
+.question-arena input{
+    padding: 10px 20px;
+    // zrpboliśmy odsunięcie wewnątrz inpucie by wpisywany tekst nie był tak blisko krawędzi
+    width: 80%;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.question-arena .answer{
+    margin-top: 30px;
+}
+
+// span zostanie utworzony w javascript
+.question-arena .answer span{
+    font-weight: bolder;
+}
+
+// span zostanie utworzony w javascript
+
+.question-arena .answer .error{
+    font-weight: bolder;
+    color: lime;
+}
+
+// tworzymy animacje do klasy, która zostanie stworzona w
+
+.shake-animation{
+    animation: shake 1s 1;
+}
+
+@keyframes shake {
+    0%{
+        left: 290px;
+    }
+    20%{ left: 340px;}
+
+    40%{
+        left: 290px;
+    }
+    60%{ left: 340px;}
+    80%{
+        left: 290px;
+    }
+    100%{ left: 300px;}
+}
